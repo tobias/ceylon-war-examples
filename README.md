@@ -19,6 +19,8 @@ or
     ceylon war jaxrs.example
 
 
+Run `ceylon help war` for a full list of options.
+
 The resulting WAR files both work in WildFly 8.1.0.Final
 and 9.0.0.Alpha1, and the servlet.example WAR works in Tomcat as well
 (but not yet Jetty). The jaxrs.example WAR hasn't yet been tried in
