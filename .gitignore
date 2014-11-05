@@ -1,0 +1,6 @@
+classes/
+modules/
+.exploded/
+.settings/
+.classpath
+*.war
