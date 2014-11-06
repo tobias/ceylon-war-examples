@@ -7,8 +7,8 @@ import ceylon.language.meta.declaration {
 
 import javax.ws.rs {
     path,
-    gET,
-    pathParam
+    pathParam,
+    get=gET
 }
 import javax.ws.rs.core {
     Response
@@ -18,8 +18,8 @@ ClassDeclaration metaRefOnClassLoad = `class Array`;
 
 path("/rest")
 shared class ExampleRestService() {
-    // this annotation is a bit gross
-    gET
+    //we alias gET to get above to make things prettier
+    get
     path("/{param}")
     shared default Response generateMessage(pathParam("param") String msg) {
         value metaRef = `class ExampleRestService`;
