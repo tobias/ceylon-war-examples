@@ -25,3 +25,12 @@ The resulting WAR files both work in WildFly 8.1.0.Final
 and 9.0.0.Alpha1, and the servlet.example WAR works in Tomcat as well
 (but not yet Jetty). The jaxrs.example WAR hasn't yet been tried in
 any other EE containers.
+
+Once you deploy the WARs to your container, you should be able to
+access the servlet at:
+
+    http://localhost:8080/servlet.example-1.0.0/
+
+and the jaxrs service at:
+
+    http://localhost:8080/jaxrs.example-1.0.0/jaxrs/rest/whatever
