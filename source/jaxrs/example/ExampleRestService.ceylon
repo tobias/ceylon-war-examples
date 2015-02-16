@@ -8,7 +8,7 @@ import ceylon.language.meta.declaration {
 import javax.ws.rs {
     path,
     pathParam,
-    get=gET
+    get
 }
 import javax.ws.rs.core {
     Response
